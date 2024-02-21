@@ -1,9 +1,15 @@
+/* Universal selector - remove any mmargin that the browser has by default */
+
+* {
+    margin: 0;
+}
+
 body {
     background-color: salmon;
 }
 
 .grid-container {
-    min-height: 100vh;
+    min-height: 200vh;
     display: grid;
     grid-template-columns: 10vw 1fr 2fr 10vw;
     grid-template-rows: 10vh 40vh 1fr;
@@ -11,6 +17,7 @@ body {
     "nav nav nav nav"
     ". prof-pic prof-info ."
     ". posts posts .";
+    row-gap: 3vh;
 }
 
 .area-border {
@@ -19,6 +26,26 @@ body {
 
 .nav {
     grid-area: nav;
+    background-color: cornflowerblue;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    font-size: larger;
+    text-decoration: underline;
 }
 
 .prof-pic {
