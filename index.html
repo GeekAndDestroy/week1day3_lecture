@@ -11,7 +11,7 @@
     <!-- Create a div to be the container of our css grid -->
     <div class="grid-container">
         <!-- create the grid items (aka the direct children of the grid-container) -->
-        <div class="nav area-border">
+        <div class="nav">
             <!-- div.nav-links will be a flex box -->
             <div class="nav-links">
                 <a href="#">Home</a>
@@ -21,13 +21,27 @@
                 <a href="#">Sign Up</a>
             </div>
         </div>
-        <div class="prof-pic area-border">
+        <div class="prof-pic">
             <div class="image-container">
                 <img src="
                 https://picsum.photos/500" alt="" id="prof-img">
             </div>
         </div>
-        <div class="prof-info area-border">Profile info goes here</div>
+        <div class="prof-info">
+            <!-- a flexbox container for the info -->
+            <div class="info-container">
+                <!-- Name header -->
+                <h2>Jeff Chebul</h2>
+                <!-- About Me -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis voluptate ullam facilis repellendus delectus aperiam sapiente similique reprehenderit fuga hic, officia dicta, corrupti dolore beatae commodi obcaecati? Accusamus, dolore.</p>
+                <!-- Contact Info -->
+                <div class="contact">
+                    <p>Email: <b>jmchebul@jmchebul.com</b></p>
+                    <p>Phone: <b>510-200-8330</b></p>
+                    <p>Github: <b>GeekAndDestroy</b></p>
+                </div>
+            </div>
+        </div>
         <div class="posts area-border">Posts go here</div>
     </div>
 
